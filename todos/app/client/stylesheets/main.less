@@ -25,9 +25,6 @@ body {
   float: right;
 }
 
-.todos-panel {
-}
-
 .create-todo {
   background: #fff;
   overflow: hidden;
@@ -99,5 +96,60 @@ body {
 
   .action {
     float: right;
+  }
+}
+
+.comments {
+  border: 1px solid #ccc;
+
+  h3 {
+    background: #eee;
+    margin: 0;
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .new-comment {
+    padding: 10px;
+    textarea {
+      width: 99%;
+      height: 75px;
+    }
+
+    .actions {
+    }
+  }
+
+  ul {
+    list-style: none;
+    clear: both;
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+
+    li.comment {
+      float: left;
+      clear: both;
+      border-bottom: 1px solid #ccc;
+      padding: 10px;
+      width: 100%;
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+      .user {
+        float: left;
+        width: 120px;
+        font-size: .7em;
+        color: #777;
+      }
+
+      .body {
+        margin-left: 120px;
+        color: #262626;
+        font-size: .9em;
+      }
+    }
   }
 }
