@@ -25,23 +25,7 @@ body {
   float: right;
 }
 
-.create-todo {
-  background: #fff;
-  overflow: hidden;
-  .border-radius(6px);
-
-  input {
-    width: 100%;
-    .box-sizing(border-box);
-    padding-top: 30px;
-    padding-bottom: 30px;
-    font-size: 18pt;
-    height: 24pt;
-    line-height: 24pt;
-  }
-}
-
-.edit-todo {
+form {
   background: #fff;
   overflow: hidden;
   .border-radius(6px);
@@ -49,12 +33,28 @@ body {
   input[type=text], textarea {
     width: 100%;
     .box-sizing(border-box);
+  }
+
+  input[type=text] {
     padding-top: 30px;
     padding-bottom: 30px;
     font-size: 18pt;
     height: 24pt;
     line-height: 24pt;
   }
+
+  textarea {
+    height: 100px;
+    line-height: 1em;
+    padding: 5px;
+    font-size: 14pt;
+  }
+}
+
+.create-todo {
+}
+
+.edit-todo {
 }
 
 .todos-count {
@@ -64,12 +64,16 @@ body {
   color: lighten(#777, 20%);
 }
 
-.todos-list {
+.list {
   list-style: none;
   clear: both;
   overflow: hidden;
   margin: 0px;
   padding: 0px;
+}
+
+.todos-list {
+  &:extend(.list);
 }
 
 .todo-item {
@@ -121,11 +125,7 @@ body {
   }
 
   ul {
-    list-style: none;
-    clear: both;
-    overflow: hidden;
-    margin: 0px;
-    padding: 0px;
+    &:extend(.list);
 
     li.comment {
       float: left;
