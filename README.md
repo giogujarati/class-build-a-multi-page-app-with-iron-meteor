@@ -1,22 +1,5 @@
 # Build a Multi Page App with Iron Meteor
 
-In this class we'll go through the workflow of building a multi-page application
-in Meteor. You'll see how to generate a real project structure and scaffold
-routes, controllers and templates.
-
-We'll be using the new iron command line too to set up our project
-and create scaffolding for routes, controllers and templates. Then we'll create
-a master layout with breadcrumbs that change depending on the page.
-
-You'll see
-how to customize login using Meteor's OAuth service.
-
-Then you'll set
-up a real-world project structure using iron scaffolding. 
-
-You'll see a
-development workflow for creating routes, controllers and templates. Then we'll
-customize login using Meteor's OAuth service.  
-
+In this class we'll build a more sophisticated, multi-page application in Meteor. We'll use the iron scaffolding tool to create project structure and boilerplate code. In addition to understanding the concepts of a multi-page app, we'll build several features including multiple users, a comment system, and a customized Meteor Developer Accounts OAuth login.
 
 **https://www.eventedmind.com/classes/build-a-multi-page-app-with-iron-meteor-6737880d**
